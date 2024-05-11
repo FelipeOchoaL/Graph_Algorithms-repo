@@ -1,23 +1,22 @@
 public class Edge {
-    private Vertex start;
-    private Vertex end;
-    private Integer weight;
+    int destinationV;
+    int weight;
+    Edge next;
 
-    public Edge(Vertex startV, Vertex endV, Integer inputWeight){
-        this.start = startV;
-        this.end = endV;
-        this.weight = inputWeight;
+    public Edge(int destinationV, int weight) {
+        this.destinationV = destinationV;
+        this.weight = weight;
     }
 
-    public Vertex getStart() {
-        return start;
-    }
-
-    public Vertex getEnd() {
-        return end;
-    }
-
-    public Integer getWeight() {
-        return weight;
-    }
+//    public Vertex getStart() {
+//        return start;
+//    }
+//
+//    public Vertex getEnd() {
+//        return end;
+//    }
+//
+//    public Integer getWeight() {
+//        return weight;
+//    }
 }
