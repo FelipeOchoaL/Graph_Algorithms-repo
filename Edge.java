@@ -1,11 +1,11 @@
 public class Edge {
-    int destinationV;
-    int weight;
+    int v;
+    int w;
     Edge next;
 
-    public Edge(int destinationV, int weight) {
-        this.destinationV = destinationV;
-        this.weight = weight;
+    public Edge(int v, int w) {
+        this.v = v;
+        this.w = w;
     }
 
 //    public Vertex getStart() {
