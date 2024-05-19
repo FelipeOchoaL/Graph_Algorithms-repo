@@ -97,7 +97,7 @@ public class Graph {
             }
         }
     }
-    public void printShortestPaths(int s) {
+    public void printShortestPaths(int s) { // este me imprime el camino de vertices que debo seguir para llegar a cada vertice
         for (int i = 1; i < V.length; i++) {
             if (i != s) {
                 System.out.print("camino hacia el vertice  " + i + ": ");
