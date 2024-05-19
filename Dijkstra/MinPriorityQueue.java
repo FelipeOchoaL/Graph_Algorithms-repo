@@ -1,5 +1,7 @@
+package Dijkstra;
+
 public class MinPriorityQueue {
-    Vertex [] array;
+    Vertex[] array;
     int heapSize;
 
     public MinPriorityQueue(int heapSize){

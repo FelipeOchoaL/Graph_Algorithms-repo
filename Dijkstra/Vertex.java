@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package Dijkstra;
+
 public class Vertex {
     int number;
     int distance;

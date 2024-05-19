@@ -1,3 +1,5 @@
+package Dijkstra;
+
 public class TestMinPriorityQueue {
     public static void main(String [] args) {
         MinPriorityQueue mpq = new MinPriorityQueue(5);

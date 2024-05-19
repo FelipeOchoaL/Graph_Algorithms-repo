@@ -1,3 +1,5 @@
+package Dijkstra;
+
 public class Edge {
     int v;
     int w;

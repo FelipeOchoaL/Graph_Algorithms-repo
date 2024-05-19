@@ -1,9 +1,11 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+package Dijkstra;
+
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.PriorityQueue;
 import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.Scanner;
+
 public class Graph {
     // vertices
     Vertex[] V;
