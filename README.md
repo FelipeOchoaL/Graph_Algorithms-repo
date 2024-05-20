@@ -9,7 +9,10 @@ IDE: INTELLIJ IDEA 2023.3.3 <br>
 SDK: Java 17 <br>
 El trabajo constara de dos documentos los cuales van a tener los algoritmos por separado <br>
 los cuales le daran solucion a dos grafos diferentes, uno que adjuntaremos con datos y otro con los datos de las ciudades. <br>
+# Dijkstra
 La explicacion de lo que contiene Dijkstra: <br>
+
+## Clases
 
 1. **Clase Vertex**: Esta clase representa un vértice en el grafo. Cada vértice tiene un número (que actúa como su identificador), <br>
 una distancia (que se utiliza para almacenar la distancia más corta desde el vértice de origen a este vértice) y un `pi` (que se utiliza <br>
@@ -55,9 +58,11 @@ El paquete consta de tres clases principales: `Main`, `Graph` y `Vertex`.
 2. **Graph**: Esta clase representa un grafo. Contiene un array de vértices (`V`) y un array de aristas (`E`). También tiene métodos para imprimir los vértices y las ciudades.
 
 3. **Vertex**: Esta clase representa un vértice en un grafo. Cada vértice tiene un índice, una distancia desde el vértice de origen y un vértice padre (`pi`), que es el vértice anterior en el camino más corto desde el vértice de origen.
+4. **Edge**: Tambien se encuentra una clase Edge que es la clase de las aristas la cual solo contiene dos vertices y el  
+ peso.
 
 ## Algoritmo
 
 El algoritmo de Bellman-Ford se ejecuta en el método `BF` de la clase `BellmanFord`, que no se muestra en los fragmentos de código proporcionados. Este método toma un grafo y un vértice de origen como entrada, y actualiza las distancias y los vértices padres de todos los vértices en el grafo. <br>
 
-Tambien se encuentra una clase Edge que es la clase de las aristas la cual solo contiene dos vertices y el peso .
+
