@@ -17,6 +17,7 @@ public class Main {
         System.out.printf("Tiempo de ejecución de Bellman-Ford: %.6f segundos%n", duration);
         System.out.println("Datos para el source: --> " + source );
         System.out.println(" ");
+        BellmanFord.printShortestPaths(G,source);
         if(result)
         {
             System.out.println("No tiene ciclos negativos");

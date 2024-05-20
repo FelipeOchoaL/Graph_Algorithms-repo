@@ -39,6 +39,22 @@ public class BellmanFord {
         }
         return true;
     }
+    public static void printShortestPaths(Graph G, int s) {
+        for (int i = 1; i <= G.Vsize; i++) {
+            if (i != s) {
+                System.out.print("Path from " + s + " to " + i + ": ");
+                printPath(G.V[i]);
+                System.out.println();
+            }
+        }
+    }
+
+    private static void printPath(Vertex v) {
+        if (v.pi != null) {
+            printPath(v.pi);
+        }
+        System.out.print(v.index + " ");
+    }
     public static Vertex EncontrarVertice(int u, Vertex[] V)
     {
         for (int i=0; i< V.length; i++)
