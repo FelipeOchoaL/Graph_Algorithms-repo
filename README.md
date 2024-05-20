@@ -47,6 +47,10 @@ para almacenar el vértice anterior en el camino más corto desde el vértice de
 La explicacion de lo que contiene BellmanFord: <br>
 # BellmanFord
 
+## Pseudo codigo
+![Pseudo código Bellman-Ford]([https://github.com/tu_usuario/tu_repositorio/raw/main/assets/Bellman-Ford.png](https://github.com/FelipeOchoaL/Graph_Algorithms-repo/blob/main/Pseudo%20codigo%20Bellman-Ford.png?raw=true))
+
+
 El paquete `BellmanFord` contiene una implementación del algoritmo de Bellman-Ford, que es un algoritmo de grafos que encuentra el camino más corto desde un vértice de origen a todos los demás vértices en un grafo ponderado. Este algoritmo es capaz de manejar grafos con aristas de peso negativo, a diferencia de otros algoritmos como Dijkstra.
 
 El paquete consta de tres clases principales: `Main`, `Graph` y `Vertex`.
