@@ -41,3 +41,23 @@ para almacenar el vértice anterior en el camino más corto desde el vértice de
 4. **Clase TestDijkstra**: Esta clase contiene el método `main` que se utiliza para probar el algoritmo de Dijkstra. En este método, se crea un nuevo grafo, <br>
    se lee desde un archivo, se inicializa la fuente, se ejecuta el algoritmo de Dijkstra y se imprimen los caminos más cortos.
 
+La explicacion de lo que contiene BellmanFord: <br>
+# BellmanFord
+
+El paquete `BellmanFord` contiene una implementación del algoritmo de Bellman-Ford, que es un algoritmo de grafos que encuentra el camino más corto desde un vértice de origen a todos los demás vértices en un grafo ponderado. Este algoritmo es capaz de manejar grafos con aristas de peso negativo, a diferencia de otros algoritmos como Dijkstra.
+
+El paquete consta de tres clases principales: `Main`, `Graph` y `Vertex`.
+
+## Clases
+
+1. **Main**: Esta es la clase principal que ejecuta el programa. En el método `main`, se crea un nuevo objeto `Graph`, se imprime una lista de ciudades, se lee un grafo desde un archivo de texto y se ejecuta el algoritmo de Bellman-Ford en el grafo. Finalmente, imprime si el grafo tiene o no ciclos negativos y los detalles de los vértices.
+
+2. **Graph**: Esta clase representa un grafo. Contiene un array de vértices (`V`) y un array de aristas (`E`). También tiene métodos para imprimir los vértices y las ciudades.
+
+3. **Vertex**: Esta clase representa un vértice en un grafo. Cada vértice tiene un índice, una distancia desde el vértice de origen y un vértice padre (`pi`), que es el vértice anterior en el camino más corto desde el vértice de origen.
+
+## Algoritmo
+
+El algoritmo de Bellman-Ford se ejecuta en el método `BF` de la clase `BellmanFord`, que no se muestra en los fragmentos de código proporcionados. Este método toma un grafo y un vértice de origen como entrada, y actualiza las distancias y los vértices padres de todos los vértices en el grafo. <br>
+
+Tambien se encuentra una clase Edge que es la clase de las aristas la cual solo contiene dos vertices y el peso .
