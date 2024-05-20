@@ -18,6 +18,19 @@ public class Graph {
         adj[u] = e;
     }
 
+    public void imprimirCiudades() {
+        String[] ciudades = {
+                "Medellin", "Bello", "Tunja", "Quibdo", "Manizales",
+                "Yopal", "San martin", "Ocaña", "Bucaramanga", "Ibague",
+                "Cali", "Neiva", "Popayan", "Monteria", "Mitú"
+        };
+
+        System.out.println("Ciudades:");
+        for (int i = 0; i < ciudades.length; i++) {
+            System.out.println((i + 1) + ". " + ciudades[i]);
+        }
+    }
+
     public void initializeSingleSource( int s) {
         for (int i = 1; i < V.length; i++) {
             V[i] = new Vertex(i, Integer.MAX_VALUE, -1);
@@ -81,9 +94,9 @@ public class Graph {
             }
         });
 
-        for (Vertex v : g.V) {
-            if (v != null) {
-                Q.add(v);
+        for (int i = 0; i < g.V.length; i++) {
+            if (g.V[i] != null) {
+                Q.add(g.V[i]);
             }
         }
 
@@ -102,7 +115,7 @@ public class Graph {
     public void printShortestPaths(int s) { // este me imprime el camino de vertices que debo seguir para llegar a cada vertice
         for (int i = 1; i < V.length; i++) {
             if (i != s) {
-                System.out.print("camino hacia el vertice  " + i + ": ");
+                System.out.print("camino desde el source  hacia el vertice  --> " + i + ": ");
                 printPath(s, i);
                 System.out.println();
             }
@@ -113,7 +126,7 @@ public class Graph {
         if (v == s) {
             System.out.print(s + " ");
         } else if (V[v].pi == -1) {
-            System.out.print("No path from " + s + " to " + v + " exists");
+            System.out.print("No hay camino desde " + s + " hacia " + v + " existente.");
         } else {
             printPath(s, V[v].pi);
             System.out.print(v + " ");

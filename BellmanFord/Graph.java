@@ -1,7 +1,7 @@
 package BellmanFord;
 
 public class Graph {
-    //estos van a almacenar el tamaño del conjunto de vértices en el grafo.
+
     public int Vsize;
     public int Esize;
 
@@ -14,6 +14,21 @@ public class Graph {
         this.Esize=Esize;
         this.V=V;
         this.E=E;
+    }
+    public Graph(){
+
+    }
+    public void imprimirCiudades() {
+        String[] ciudades = {
+                "Medellin", "Bello", "Tunja", "Quibdo", "Manizales",
+                "Yopal", "San martin", "Ocaña", "Bucaramanga", "Ibague",
+                "Cali", "Neiva", "Popayan", "Monteria", "Mitú"
+        };
+
+        System.out.println("Ciudades:");
+        for (int i = 0; i < ciudades.length; i++) {
+            System.out.println((i + 1) + ". " + ciudades[i]);
+        }
     }
 
     public void printVertices()
@@ -34,11 +49,11 @@ public class Graph {
 
             if(v.pi!=null)
             {
-                System.out.println("v: "+ v.index + " | d: " + d+ " | pi: "+ v.pi.index);
+                System.out.println("vertice: "+ v.index + " ________  distancia: " + d+ " ______  pi(anterior): "+ v.pi.index);
             }
             else
             {
-                System.out.println("v: "+ v.index + " | d: " + d+ " | pi: "+ null);
+                System.out.println("vertice: "+ v.index + " ________  distancia:  " + d+ " ______  pi(anterior): "+ null);
             }
 
 
