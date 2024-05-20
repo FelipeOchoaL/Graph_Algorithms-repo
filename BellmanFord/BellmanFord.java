@@ -17,7 +17,7 @@ public class BellmanFord {
         }
     }
     //Bellman Ford implementación
-    public static boolean BF(Graph G, int s)
+    public static boolean BellmanFo(Graph G, int s)
     {
         for(int i=1; i<=G.Vsize;i++)
         {

@@ -8,8 +8,13 @@ public class Main {
         Graph g = new Graph();
         g.imprimirCiudades();
         int source=1;
-        Graph G=BellmanFord.leerGrafo("C:\\Users\\felip\\Desktop\\Universidad\\Semestre 3\\Estructura de datos 2\\GraphAlgoritms\\Graph_Algorithms-repo\\graph1.txt", source);
-        boolean result =  BellmanFord.BF(G,source);
+        Graph G=BellmanFord.leerGrafo("C:\\Users\\felip\\Desktop\\Universidad\\Semestre 3\\Estructura de datos 2\\GraphAlgoritms\\Graph_Algorithms-repo\\BellmanFord\\ciudades.txt", source);
+        long startTime = System.nanoTime();
+        boolean result =  BellmanFord.BellmanFo(G,source);
+        long endTime = System.nanoTime();
+
+        double duration = (endTime - startTime) / 1_000_000_000.0;  // Tiempo de ejecución en segundos
+        System.out.printf("Tiempo de ejecución de Bellman-Ford: %.6f segundos%n", duration);
         System.out.println("Datos para el source: --> " + source );
         System.out.println(" ");
         if(result)
