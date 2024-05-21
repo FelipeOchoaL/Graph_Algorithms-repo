@@ -40,7 +40,7 @@ public class BellmanFord {
         return true;
     }
     public static void printShortestPaths(Graph G, int s) {
-        for (int i = 1; i <= G.Vsize; i++) {
+        for (int i = 1; i < G.Vsize; i++) {
             if (i != s) {
                 System.out.print("Path from " + s + " to " + i + ": ");
                 printPath(G.V[i]);

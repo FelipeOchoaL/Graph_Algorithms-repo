@@ -13,6 +13,6 @@ public class Vertex {
         this.positionInMinHeap = -1;
     }
     public String toString(){
-        return number + "" + distance + "" + pi + "" + positionInMinHeap;
+        return number + " " + distance + " " + pi + " " + positionInMinHeap;
     }
 }

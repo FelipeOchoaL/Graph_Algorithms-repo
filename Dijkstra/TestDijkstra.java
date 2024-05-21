@@ -3,7 +3,7 @@ package Dijkstra;
 public class TestDijkstra {
     public static void main(String [] args) {
         Graph g = new Graph();
-        g.readGraph("C:\\Users\\felip\\Desktop\\Universidad\\Semestre 3\\Estructura de datos 2\\GraphAlgoritms\\Graph_Algorithms-repo\\ciudades.txt"); // "graph1.txt"
+        g.readGraph("C:\\Users\\felip\\Desktop\\Universidad\\Semestre 3\\Estructura de datos 2\\GraphAlgoritms\\Graph_Algorithms-repo\\Dijkstra\\graphNew.txt"); // "graph1.txt"//ciudades.txt
         g.initializeSingleSource(1);
         long startTime = System.nanoTime();
         g.dijkstra(g, 1); // Llama al método dijkstra
@@ -21,6 +21,6 @@ public class TestDijkstra {
         System.out.println("__________________________________________________________");
         g.printGraph();
         System.out.println("__________________________________________________________");
-        //g.printVertices();
+        g.printVertices();
     }
 }

@@ -8,7 +8,7 @@ public class Main {
         Graph g = new Graph();
         g.imprimirCiudades();
         int source=1;
-        Graph G=BellmanFord.leerGrafo("C:\\Users\\felip\\Desktop\\Universidad\\Semestre 3\\Estructura de datos 2\\GraphAlgoritms\\Graph_Algorithms-repo\\BellmanFord\\ciudades.txt", source);
+        Graph G=BellmanFord.leerGrafo("C:\\Users\\felip\\Desktop\\Universidad\\Semestre 3\\Estructura de datos 2\\GraphAlgoritms\\Graph_Algorithms-repo\\BellmanFord\\graphNew.txt", source);
         long startTime = System.nanoTime();
         boolean result =  BellmanFord.BellmanFo(G,source);
         long endTime = System.nanoTime();
